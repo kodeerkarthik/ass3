@@ -1,0 +1,157 @@
+.icn {
+	font-size:30px;
+	color:red;
+}
+.black{ 
+	font-size:30px;
+	color: black; 
+}
+.fa-bell {
+	font-size:25px;
+	color: black; 
+}
+.center {
+	text-align: center;
+}
+.brown {
+	padding: 15px;
+	background-color: #bababa;
+}
+body {
+	background-color: #e8e8e8;
+}
+.date {
+	margin-top: 50px;
+}
+.date1 {
+	border-radius: 5px;
+	margin-left: 20px;
+	background-color: #dbd9d9;
+	height: 120px;
+	padding: 10px 40px;
+}
+.devices {
+	margin-left: 70px;
+}
+.device_body {
+	background-color: #bababa;
+	width: 95%;
+	border: 1px solid white;
+	border-radius: 3px;
+	margin: 0 20px;
+	padding: 20px;
+}
+.icn_box {
+	background-color: #f2f6f7;
+	height: 200px;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 40px 0 40px 40px;
+}
+.icon {
+	width: 50px;
+	border-radius: 50%;
+}
+.sml {
+	font-size: 13px;
+}
+.blue {
+	font-size: 13px;
+	color: #2bbedb;
+}
+.community {
+	margin-top: 50px;
+}
+.com_img {
+	width: 100px;
+	height: 150px;
+}
+.com_icn {
+	font-size: 20px;
+}
+.twt_img {
+	width: 100px;
+	border-radius: 50%;
+}
+.com_content {
+	background-color: #bababa;
+	width: 100%;
+	border: 1px solid white;
+	border-radius: 3px;
+}
+.com_inside {
+	background-color: #f2f6f7;
+	margin: 20px 0;
+}
+.social_inside {
+	background-color: #aaf7f3;
+	margin: 20px 0;
+}
+.fa-bars {
+	font-size: 30px;
+}
+a {	font-size: 20px;}
+.fa-cloud-sun{ color: #f7a902; font-size: 25px; }
+.fa-wifi{ color: #00c900; font-size: 30px; }
+.fa-th-large { font-size: 20px; }
+.evnt{ width: 100px; }
+.white { background-color: #f2f6f7; margin-bottom: 20px; height: 130px; }
+.evnt_body {
+	background-color: #bababa;
+	width: 95%;
+	border: 1px solid white;
+	border-radius: 3px;
+	margin: 0 20px;
+	padding: 0 20px;
+}
+.fest { padding: 20px; }
+#wish { font-size: 18px; }
+.padding{ padding-top: 20px; }
+
+
+.cal {
+	margin-top: 20px;
+	padding:0 40px;
+}
+.monthPre{
+color: gray;
+text-align: center;
+}
+.monthNow{
+text-align: center;
+}
+.dayNow{
+color: white;
+text-align: center;
+background-color: #05c4b4;
+}
+#calendar{
+background-color: #eaedf2;
+width: 75%;
+}
+.calendar td{ 
+htmlContent: 2px;
+width: 40px;
+}
+.button{
+width: 200px;
+border-radius: 25px;
+margin-left: 50px;
+}
+.monthNow th{
+/*background-color: #e8e8e8;*/
+text-align: center;
+}
+.dayNames{
+background:#bababa;
+color: #FFFFFF;
+text-align: center;
+}
+.optn {
+	background-color: #42f4c5;
+	font-size: 12px;
+	border: white solid 2px;
+	border-radius: 50px;
+	width: 100px;
+	height: 25px;
+}

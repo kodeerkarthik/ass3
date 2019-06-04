@@ -1,0 +1,108 @@
+	 <!DOCTYPE html>
+	<html>
+	<head>
+		<title>welcome</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/welcome.css">
+	</head>
+	<body>
+		<!-- -------------------------------------SIGN-UP------------------------------------------>
+		<div class="container" id="signup">
+			<div class="row left">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<label class="center">Regester as a</label>
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						Resident 
+					</button>
+					<div class="dropdown-menu">
+	      				<a class="dropdown-item" href="#">Link 1</a>
+	      				<a class="dropdown-item" href="#">Link 2</a>
+	      				<a class="dropdown-item-text" href="#">Text Link</a>      				
+	   				</div> 
+	   				<form name="myform" method="post" onSubmit="check_form()">
+						<table>
+							<tr>
+								<td><label id="fname">First Name</label><input type="text" class="lg" name="fname" id="ifname"><p class="red" id="pfname"></p></td>
+								<td><label id="lname">Last Name</label><input type="text" class="lg" name="lname" id="ilname"><p class="red" id="plname"></p></td>
+							</tr>
+		            		<tr>
+								<td><label id="email">Email</label><input type="text" class="lg" name="email" id="iemail"><p id="pemail" class="red"></p></td>
+								<td><label id="ph">Phone Number</label><input type="text" class="lg" name="ph_no" id="iph"><p class="red" id="pph_no"></p></td>
+		            		</tr>
+		            		<tr>
+								<td><label id="adr1">Street Address1</label><input type="text" class="lg" placeholder="Street line1" name="adr1" id="iadr1"><p class="red" id="padr1"></p></td>
+								<td><label id="adr2">Street Address2</label><input type="text" class="lg" placeholder="Street line2" name="adr2" id="iadr2"><p class="red" id="padr2"></p></td>
+		            		</tr>
+		            		<tr>
+								<td><label id="city">City</label><input type="text" class="lg" placeholder="City" name="city" id="icity"><p class="red" id="pcity"></p></td>
+								<td>
+									<div class="row">
+										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+											<label id="state">State</label><input type="text" class="sm" id="istate"  placeholder="State" name="state"><p class="red" id="pstate"></p>
+										</div>
+										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+											<label id="zip">Zip</label><input type="text" class="sm" id="izip"  placeholder="Zip" name="zip"><p class="red" id="pzip"></p>
+										</div>
+								</td>
+		            		</tr>
+		            		<tr>
+								<td><label id="pwd">Create Password</label><input type="password" class="lg" id="ipwd" name="pwd"><p class="red" id="ppwd"></p></td>
+								<td><label id="v_pwd">Verify Password</label><input type="password" class="lg" id="iv_pwd" name="v_pwd"><p class="red" id="pv_pwd"></p></td>
+		            		</tr>
+						</table>
+						<button type="submit" class="btn btn-info center">Submit</button>
+						<p class="qstn">already have an account?
+						<a href="#loginModal" role="button" data-toggle="modal">Sign in</a>	</p>
+					</form> 	
+				</div>					
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+			</div>
+		</div>
+
+	<!-----------------------------------------------HOME---------------------------------------------->
+		
+		<div class="container" id="main">
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<i class="fa fa-coffee icn"><b class="black">qhub</b></i>
+					<p class="heading">Welcome</p>
+					<p class="content"> Today many people relay on computers to do homework, work and create or store useful information. Therefore, it is important for the information on the computer to be stored</p>
+					<a href="#loginModal" role="button" class="btn btn-info btn-lg" data-toggle="modal">Login</a><br>
+					<button type="button" class="btn btn-secondary" onclick="signup()">Signup</button>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+			</div>
+		</div>
+	<!-- ------------------------------------------------SIGN-IN---------------------------------------------->
+		<div id="loginModal" class="modal fade" role="dialog" aria-hidden="true">
+	    <div class="modal-dialog"> <!-- porivide dialog width -->
+	        <div class="modal-content"><!-- porivide dialog background -->
+	            <div class="modal-body popup">
+	            	<i class="fa fa-coffee icn"><b class="black">qhub</b></i><br><br>
+	                <a href="" class="float-right">New user?</a>
+	                <form name="formvalidate"method="post" onSubmit="return check_Email(this)" action="manager.html" >
+	                	<label>Email</label>
+	                	<input type="text" class="form-control form-control-lg" name="myemail" required="">
+	                	<p id="signinemail"></p>
+		                <label>Password</label>
+		                <input type="password" class="form-control form-control-lg" name="mypwd" required="">
+		                <p id="signinpwd"></p>
+		               <button type="submit" class="btn btn-info center"> Submit</a></button>
+		                <a href="" class="float-right">Forgot password?</a>  
+		                <p class="qstn">Don't have an account?
+						<a href="#signup" onclick="signup()">Sign Up</a></p>
+					</form> 	
+	            </div>
+	        </div>
+	    </div>
+	<!------------------------------------------------------------------------------------------------------------------>
+		<script type="text/javascript" src="./javascript/welcome.js"></script>
+	</body>
+	</html>
